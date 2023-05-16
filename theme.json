@@ -130,7 +130,9 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var:preset|font-family|league-spartan"
+			"fontFamily": "var:preset|font-family|league-spartan",
+			"fontSize": "1.3rem",
+			"lineHeight": "1.6"
 		}
 	},
 	"templateParts": [
