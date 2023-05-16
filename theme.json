@@ -10,9 +10,7 @@
 				"%",
 				"px",
 				"em",
-				"rem",
-				"vh",
-				"vw"
+				"rem"
 			]
 		},
 		"typography": {
@@ -79,9 +77,50 @@
 					"fontFamily": "var:preset|font-family|league-spartan"
 				}
 			},
+			"h1": {
+				"typography": {
+					"fontSize": "5rem",
+					"fontStyle": "normal",
+					"fontWeight": "900",
+					"lineHeight": "1.2"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "3.25rem",
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"lineHeight": "1.1"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "2.25rem",
+					"fontStyle": "normal",
+					"fontWeight": "700",
+					"lineHeight": "1.1"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1.75rem",
+					"fontStyle": "normal",
+					"fontWeight": "900",
+					"lineHeight": "1.1"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "1.5rem",
+					"fontStyle": "normal",
+					"fontWeight": "900",
+					"lineHeight": "1.1"
+				}
+			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var:preset|font-family|league-spartan"
+					"fontFamily": "var:preset|font-family|league-spartan",
+					"lineHeight": "1.1"
 				}
 			},
 			"link": {
