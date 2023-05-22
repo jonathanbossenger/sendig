@@ -1,6 +1,60 @@
 {
 	"settings": {
 		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#302e26",
+					"name": "Sendig Black",
+					"slug": "custom-sendig-black"
+				},
+				{
+					"color": "#e2e6a4",
+					"name": "Sendig Yellow",
+					"slug": "custom-sendig-yellow"
+				},
+				{
+					"color": "#dfb805",
+					"name": "Sendig Mustard",
+					"slug": "custom-sendig-mustard"
+				},
+				{
+					"color": "#6a6a6b",
+					"name": "Sendig Dark Grey",
+					"slug": "custom-sendig-dark-grey"
+				},
+				{
+					"color": "#c0121b",
+					"name": "Sendig Red",
+					"slug": "custom-sendig-red"
+				},
+				{
+					"color": "#d8dbd4",
+					"name": "Sendig Light Grey",
+					"slug": "custom-sendig-light-grey"
+				},
+				{
+					"color": "#fefefe",
+					"name": "Sendig White",
+					"slug": "custom-sendig-white"
+				},
+				{
+					"color": "#a1b9f9",
+					"name": "Sendig Light Blue",
+					"slug": "custom-sendig-light-blue"
+				},
+				{
+					"color": "#0b3bbc",
+					"name": "Sendig Dark Blue",
+					"slug": "custom-sendig-dark-blue"
+				},
+				{
+					"color": "#4f0561",
+					"name": "Sendig Purple",
+					"slug": "custom-sendig-purple"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "800px",
 			"wideSize": "1200px"
@@ -79,6 +133,7 @@
 			},
 			"h1": {
 				"typography": {
+					"fontFamily": "var:preset|font-family|league-spartan",
 					"fontSize": "5rem",
 					"fontStyle": "normal",
 					"fontWeight": "900",
