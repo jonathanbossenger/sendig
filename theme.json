@@ -125,6 +125,13 @@
 		"useRootPaddingAwareAlignments": true
 	},
 	"styles": {
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"lineHeight": "1.0"
+				}
+			}
+		},
 		"elements": {
 			"button": {
 				"typography": {
