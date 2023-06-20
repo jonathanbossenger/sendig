@@ -1,3 +1,17 @@
+.wp-block-group:has(> .wp-block-separator.is-style-sendig-separator) {
+    position: relative;
+}
+
 .wp-block-separator.is-style-sendig-separator {
-    margin-left: 6rem !important;
+    background-color: #000;
+    height: 25px;
+    position: absolute;
+    width: 100%;
+    left: 28.6vw;
+    transform: rotate(-4deg) skewX(-4deg);
+}
+
+.wp-block-separator.alignfull.is-style-sendig-separator,
+.wp-block-separator.alignwide.is-style-sendig-separator {
+    /**margin-inline: 6rem -0.1em;**/
 }
