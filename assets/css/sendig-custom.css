@@ -1,17 +1,11 @@
-.wp-block-group:has(> .wp-block-separator.is-style-sendig-separator) {
-    position: relative;
+body .is-layout-constrained > .alignwide.is-style-sendig-separator {
+    max-width: 100vw;
 }
 
 .wp-block-separator.is-style-sendig-separator {
     background-color: #000;
     height: 25px;
-    position: absolute;
-    width: 100%;
-    left: 28.6vw;
+    margin-block: 1.5rem 4.5rem;
     transform: rotate(-4deg) skewX(-4deg);
-}
-
-.wp-block-separator.alignfull.is-style-sendig-separator,
-.wp-block-separator.alignwide.is-style-sendig-separator {
-    /**margin-inline: 6rem -0.1em;**/
+    width: calc(100vw - (var(--wp--style--global--wide-size) / 2) + var(--wp--style--global--wide-size));
 }
