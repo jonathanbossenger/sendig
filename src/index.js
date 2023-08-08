@@ -1,6 +1,7 @@
 import { registerBlockExtension } from '@10up/block-components';
 import { Button } from '@wordpress/components';
 import { BlockControls } from '@wordpress/block-editor';
+import { pullLeft, pullRight } from '@wordpress/icons';
 
 /**
  * BlockEdit
@@ -14,27 +15,36 @@ import { BlockControls } from '@wordpress/block-editor';
  * @returns {JSX}
  */
 function BlockEdit(props) {
-	console.log('Hello from Sendig!');
 
-	function handleClick() {
-		console.log('Clicked from Sendig!');
+	function handleClickLeft() {
+		//props.setAttribute('hasFlipDirection', 'left');
+	}
+
+	function handleClickRight() {
+		//props.setAttribute('hasFlipDirection', 'right');
 	}
 
 	return (
 		<BlockControls>
 			<Button
-				variant="primary"
-				onClick={ handleClick }
-			>
-				Click here
-			</Button>
+				icon={ pullLeft }
+				label="Align Left"
+				onClick={ handleClickLeft }
+			/>
+			<Button
+				icon={ pullRight }
+				label="Align Right"
+				onClick={ handleClickRight }
+			/>
 		</BlockControls>
 	);
 }
 
-
-function generateClassNames(props) {
-
+function generateClassNames(attributes) {
+	// TypeError: Cannot read properties of undefined (reading 'hasFlipDirection')
+	console.log(attributes);
+	//return 'has-flip-direction-' . attributes.hasFlipDirection;
+	//return 'has-flip-direction-right';
 }
 
 registerBlockExtension(
