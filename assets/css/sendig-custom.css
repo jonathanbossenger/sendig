@@ -8,4 +8,17 @@ body .is-layout-constrained > .alignwide.is-style-sendig-separator {
     margin-block: 1.5rem 4.5rem;
     transform: rotate(-4deg) skewX(-4deg);
     width: calc(100vw - (var(--wp--style--global--wide-size) / 2) + var(--wp--style--global--wide-size));
+    /* 1920 */
+    /* 1920 - (1200 / 2) + 1200 */
+    transform: rotate(-4deg) skewX(-4deg);
+}
+
+.wp-block-separator.is-style-sendig-separator.has-flip-direction-right {
+    width: calc(100vw - (var(--wp--style--global--wide-size) / 2) + var(--wp--style--global--wide-size));
+    transform: rotate(-4deg) skewX(-4deg);
+}
+
+.wp-block-separator.is-style-sendig-separator.has-flip-direction-left {
+    width: calc(100vw - (var(--wp--style--global--wide-size) / 2) + var(--wp--style--global--wide-size));
+    transform: rotate(4deg) skewX(4deg);
 }

@@ -1,50 +1,66 @@
 import { registerBlockExtension } from '@10up/block-components';
-import { Button } from '@wordpress/components';
+import { ToolbarGroup, ToolbarButton } from '@wordpress/components';
 import { BlockControls } from '@wordpress/block-editor';
 import { pullLeft, pullRight } from '@wordpress/icons';
 
 /**
  * BlockEdit
  *
- * a react component that will get mounted in the editor when the block
+ * A React component that will get mounted in the editor when the block
  * is selected. It is recommended to use Slots like `BlockControls` or
  * `InspectorControls` in here to put settings into the blocks
  * toolbar or sidebar.
  *
  * @param {object} props block props
- * @returns {JSX}
+ * @returns {WPElement}
  */
-function BlockEdit(props) {
+function BlockEdit( { attributes, setAttributes } ) {
 
-	function handleClickLeft() {
-		//props.setAttribute('hasFlipDirection', 'left');
+	/**
+	 * todo - could left/rightIsPressed be combined into one attribute?
+	 */
+
+	function handleFlipDirectionLeft() {
+		setAttributes(
+			{
+				hasFlipDirection: 'left',
+				leftIsPressed: true,
+				rightIsPressed: false,
+			}
+		);
+
 	}
 
-	function handleClickRight() {
-		//props.setAttribute('hasFlipDirection', 'right');
+	function handleFlipDirectionRight() {
+		setAttributes(
+			{
+				hasFlipDirection: 'right',
+				rightIsPressed: true,
+				leftIsPressed: false,
+			}
+		);
 	}
 
 	return (
 		<BlockControls>
-			<Button
-				icon={ pullLeft }
-				label="Align Left"
-				onClick={ handleClickLeft }
-			/>
-			<Button
-				icon={ pullRight }
-				label="Align Right"
-				onClick={ handleClickRight }
-			/>
+			<ToolbarGroup>
+				<ToolbarButton isPressed={ attributes.leftIsPressed }
+					icon={ pullLeft }
+					label="Align Left"
+					onClick={ handleFlipDirectionLeft }
+				/>
+				<ToolbarButton isPressed={ attributes.rightIsPressed }
+					icon={ pullRight }
+					label="Align Right"
+					onClick={ handleFlipDirectionRight }
+				/>
+			</ToolbarGroup>
 		</BlockControls>
 	);
 }
 
 function generateClassNames(attributes) {
-	// TypeError: Cannot read properties of undefined (reading 'hasFlipDirection')
-	console.log(attributes);
-	//return 'has-flip-direction-' . attributes.hasFlipDirection;
-	//return 'has-flip-direction-right';
+	return 'has-flip-direction-' + attributes.hasFlipDirection;
 }
 
 registerBlockExtension(
@@ -56,6 +72,14 @@ registerBlockExtension(
 				type: 'string',
 				default: 'right',
 			},
+			leftIsPressed: {
+				type: 'boolean',
+				default: false,
+			},
+			rightIsPressed: {
+				type: 'boolean',
+				default: true,
+			}
 		},
 		classNameGenerator: generateClassNames,
 		Edit: BlockEdit,
