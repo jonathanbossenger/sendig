@@ -1,5 +1,5 @@
 === Sendig ===
-Contributors: Emily Rapport, Jonathan Bossenger
+Contributors: Emily Rapport, Jonathan Bossenger, Aurooba Ahmed
 Requires at least: 6.2
 Tested up to: 6.2
 Requires PHP: 5.7
@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A new WordPress block theme design
 
-You can find the sketch files here https://www.sketch.com/s/ef210a7a-a623-4353-be26-bf45d37e2d29
+You can find the Figma design here https://www.figma.com/file/HCajUTUN2NVNfYA4FKTQN0/SENDIG---FSE-Theme-(WIP)
 
 == Changelog ==
 
