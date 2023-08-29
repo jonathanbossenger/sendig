@@ -59,7 +59,7 @@ function BlockEdit( { attributes, setAttributes } ) {
 	);
 }
 
-function generateClassNames(attributes) {
+function generateClassNames( attributes ) {
 	return 'has-flip-direction-' + attributes.hasFlipDirection;
 }
 
