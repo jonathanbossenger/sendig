@@ -10,7 +10,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A new WordPress block theme design
 
-You can find the Figma design here https://www.figma.com/file/HCajUTUN2NVNfYA4FKTQN0/SENDIG---FSE-Theme-(WIP)
+You can find the Figma design here: https://www.figma.com/file/HCajUTUN2NVNfYA4FKTQN0/SENDIG---FSE-Theme-(WIP)
+
+You can view the livestream playlist here: https://www.youtube.com/playlist?list=PLB-1O1RRDyPiF-Aoqla-BUjZOtqbbUf1f
 
 == Changelog ==
 
